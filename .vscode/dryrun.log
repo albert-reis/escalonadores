@@ -1,7 +1,7 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/albert/teste/CodeAva4'
+make: Entering directory '/home/albert/escalonadores'
 rm -rf *.o
 rm -rf rr
 rm -rf priority_rr
-make: Leaving directory '/home/albert/teste/CodeAva4'
+make: Leaving directory '/home/albert/escalonadores'
  

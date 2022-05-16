@@ -10,7 +10,6 @@ void add_task(char *name, int priority, int burst);
 
 // invoke the scheduler
 void schedule();
-void init();
 
-struct node *inicio;
+struct node *inicio= NULL;
 #endif

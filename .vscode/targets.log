@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 15 20:52:57 2022
+# Make data base, printed on Sun May 15 21:58:24 2022
 
 # Variables
 
@@ -29,7 +29,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 @F = $(notdir $@)
 # makefile
-CURDIR := /home/albert/teste/CodeAva4
+CURDIR := /home/albert/escalonadores
 # makefile
 SHELL = /bin/sh
 # environment
@@ -57,7 +57,7 @@ PATH = /home/albert/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-b0228f4c-8bcc-4b21-8289-36d25155c7b7.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-841f317b-e41b-4d04-b360-881c4de9a4ec.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -67,7 +67,7 @@ LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-PWD = /home/albert/teste/CodeAva4
+PWD = /home/albert/escalonadores
 # default
 .LOADED := 
 # environment
@@ -159,9 +159,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 42655): 15 files, no impossibilities.
+# . (device 2064, inode 42625): 20 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 20 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -223,7 +223,7 @@ schedule_rr.c:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-15 20:16:08.5235063
+#  Last modified 2022-05-15 21:42:28.0485602
 #  File has been updated.
 #  Successfully updated.
 
@@ -299,12 +299,12 @@ schedule_rr.o: schedule_rr.c
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 276 B / avg = 9 B
-# current buf: size = 8162 B / used = 276 B / count = 29 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 272 B / avg = 9 B
+# current buf: size = 8162 B / used = 272 B / count = 29 / avg = 9 B
 
-# strcache performance: lookups = 55 / hit rate = 47%
+# strcache performance: lookups = 60 / hit rate = 51%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=1/55=2%
-# Finished Make data base on Sun May 15 20:52:57 2022
+# Load=29/8192=0%, Rehash=0, Collisions=1/60=2%
+# Finished Make data base on Sun May 15 21:58:24 2022
 
  

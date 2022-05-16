@@ -10,10 +10,11 @@ void add_task(char *name, int priority, int burst){
    temp.priority = priority;
    temp.burst = burst;
    
-   //insert(&inicio->next, &temp);
+   insert(&inicio->next, &temp);
 }
 
 // invoke the scheduler
 void schedule(){
-   int x = 0;
+   
+   
 }
