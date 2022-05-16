@@ -45,11 +45,11 @@ void delete(struct node **head, Task *task) {
 
 // traverse the list
 void traverse(struct node *head) {
-    
-    sjf_exe_order[0] = head->next->task;
+    Task tak;
+    sjf_exe_order[0] = head->task;
     for (struct node * temp = head; temp != NULL; temp = temp->next) {
         printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
-        Task tak = temp->task;
+        tak = temp->task;
         for(int i = 0;sjf_exe_order[i] != NULL; i++){
             if(tak.burst <= sjf_exe_order[i].burst){
                 Task aux = sjf_exe_order[i];

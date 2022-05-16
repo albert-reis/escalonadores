@@ -11,7 +11,7 @@ void add_task(char *name, int priority, int burst){
    temp.priority = priority;
    temp.burst = burst;
    
-   insert(list->head->next, &temp);
+   insert(head->next, &temp);
 }
 
 // invoke the scheduler
