@@ -10,12 +10,12 @@ void add_task(char *name, int priority, int burst){
    temp.priority = priority;
    temp.burst = burst;
    
-   insert(list->head->next, &temp);
+   insert(head->next, &temp);
 }
 
 // invoke the scheduler
 void schedule(){
-   traverse(list->head);
+   traverse(head);
    for(int i = 0; i < 6; i++){
       run(sjf_exe_order[i], sjf_exe_order[i].burst);
    }
