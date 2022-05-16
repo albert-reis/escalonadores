@@ -13,6 +13,4 @@ void schedule();
 
 struct node * head;
 
-struct List list;
-
 #endif
