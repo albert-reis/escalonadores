@@ -11,7 +11,7 @@ void add_task(char *name, int priority, int burst);
 // invoke the scheduler
 void schedule();
 
-struct node * head;
+struct node ** list;
 
 
 #endif
