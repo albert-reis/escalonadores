@@ -35,6 +35,8 @@ void delete(struct node **head, Task *task) {
     temp = *head;
     // special case - beginning of list
     if (strcmp(task->name,temp->task->name) == 0) {
+        
+
         *head = (*head)->next;
         
         
