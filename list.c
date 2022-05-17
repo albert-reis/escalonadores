@@ -51,13 +51,13 @@ void traverse(struct node *head) {
         printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
         
         tak = temp->task;
-        for(int i = 0; i < 6; i++){
+        /*for(int i = 0; i < 6; i++){
             if(tak->burst <= sjf_exe_order[i]->burst){
                 Task *aux = sjf_exe_order[i];
                 sjf_exe_order[i] = tak;
                 tak = aux;
             }
-        }
+        }*/
     }
 }
 void consult(struct node *head) {

@@ -16,4 +16,5 @@ typedef struct list
     struct node *head;
 }List;
 
+List list;
 #endif
