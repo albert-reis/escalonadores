@@ -1,7 +1,6 @@
 #ifndef SCHEDULE_H_   /* Include guard */
 #define SCHEDULE_H_
 
-#include "list.h"
 #define MIN_PRIORITY 1
 #define MAX_PRIORITY 10
 
@@ -11,7 +10,7 @@ void add_task(char *name, int priority, int burst);
 // invoke the scheduler
 void schedule();
 
-typedef struct list
+typedef struct List
 {
     struct node *head;
 }List;
