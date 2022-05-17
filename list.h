@@ -16,5 +16,6 @@ Task *sjf_exe_order[6];
 void insert(struct node **head, Task *task);
 void delete(struct node **head, Task *task);
 void traverse(struct node *head);
+void consult(struct node *head);
 
 #endif

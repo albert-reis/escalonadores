@@ -49,6 +49,7 @@ void traverse(struct node *head) {
     sjf_exe_order[0] = head->task;
     for (struct node * temp = head; temp != NULL; temp = temp->next) {
         printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
+        
         tak = temp->task;
         for(int i = 0; i < 6; i++){
             if(tak->burst <= sjf_exe_order[i]->burst){
@@ -57,5 +58,14 @@ void traverse(struct node *head) {
                 tak = aux;
             }
         }
+    }
+}
+void consult(struct node *head) {
+    struct node *temp;
+    temp = head;
+
+    while (temp != NULL) {
+        printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
+        temp = temp->next;
     }
 }

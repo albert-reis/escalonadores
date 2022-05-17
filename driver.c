@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
     fclose(in);
 
     // invoke the scheduler
-schedule();
+//schedule();
 
     return 0;
 }
