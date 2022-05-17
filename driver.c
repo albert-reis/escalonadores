@@ -20,6 +20,7 @@
 
 int main(int argc, char *argv[])
 {
+
     FILE *in;
     char *temp;
     char task[SIZE];

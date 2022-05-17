@@ -3,6 +3,7 @@
         "schedule_rr.h": "c",
         "task.h": "c",
         "list.h": "c",
-        "schedulers.h": "c"
+        "schedulers.h": "c",
+        "stdio.h": "c"
     }
 }
