@@ -14,10 +14,17 @@
 void insert(struct node **head, Task *newTask) {
     // add the new task to the list 
     struct node *newNode = malloc(sizeof(struct node));
-
-    newNode->task = newTask;
-    newNode->next = *head;
-    *head = newNode;
+    if (*head == NULL){
+        newNode->task = newTask;
+        newNode->next = *head;
+        *head = newNode;
+        list.last = newNode;
+    } else {
+        newNode->task = newTask;
+        newNode->next = *head;
+        *head = newNode;
+        list.last->next = *head;
+    }
 }
 
 // delete the selected task from the list
@@ -45,19 +52,20 @@ void delete(struct node **head, Task *task) {
 
 // traverse the list
 void traverse(struct node *head) {
-    Task *tak;
-    sjf_exe_order[0] = head->task;
+    Task *aux; 
+    int j = 0;
     for (struct node  *temp = head; temp != NULL; temp = temp->next) {
         printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
         
-        tak = temp->task;
-        /*for(int i = 0; i < 6; i++){
-            if(tak->burst <= sjf_exe_order[i]->burst){
-                Task *aux = sjf_exe_order[i];
-                sjf_exe_order[i] = tak;
-                tak = aux;
+        sjf_exe_order[j] = temp->task;
+        for(int i = 0; i < j; i++){
+            if(temp->task->burst < sjf_exe_order[i]->burst){
+                aux = sjf_exe_order[i];
+                sjf_exe_order[i] = temp->task;
+                temp->task = aux;
             }
-        }*/
+        }
+        j++;
     }
 }
 void consult(struct node *head) {

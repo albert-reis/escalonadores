@@ -13,6 +13,7 @@ void schedule();
 struct List
 {
     struct node *head;
+    struct node *last;
 }List;
 
 struct List list;
