@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "schedule.h"
 #include "task.h"
-#include "teste.h"
 #include "list.h"
 #include "CPU.h"
 Task temp;  
