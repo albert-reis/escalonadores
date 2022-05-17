@@ -1,9 +1,5 @@
 {
     "files.associations": {
-        "schedule_rr.h": "c",
-        "task.h": "c",
-        "list.h": "c",
-        "schedulers.h": "c",
-        "stdio.h": "c"
+        "schedule.h": "c"
     }
 }

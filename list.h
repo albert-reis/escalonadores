@@ -11,7 +11,7 @@ struct node {
     Task *task;
     struct node *next;
 };
-Task *sjf_exe_order[6];
+Task *sjf_exe_order[5];
 // insert and delete operations.
 void insert(struct node **head, Task *task);
 void delete(struct node **head, Task *task);

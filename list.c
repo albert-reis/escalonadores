@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-
+#include "schedule.h"
 #include "list.h"
 #include "task.h"
 
@@ -47,7 +47,7 @@ void delete(struct node **head, Task *task) {
 void traverse(struct node *head) {
     Task *tak;
     sjf_exe_order[0] = head->task;
-    for (struct node * temp = head; temp != NULL; temp = temp->next) {
+    for (struct node  *temp = head; temp != NULL; temp = temp->next) {
         printf("[%s] [%d] [%d]\n",temp->task->name, temp->task->priority, temp->task->burst);
         
         tak = temp->task;
