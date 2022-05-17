@@ -17,14 +17,19 @@ void add_task(char *name, int priority, int burst){
 
 // invoke the scheduler
 void schedule(){
-   for (struct node  *temp = list.head; temp != NULL; temp = temp->next){
+   struct node *aux;
+   struct node *temp = list.head;
+   while ( NULL != temp->next){
       
-      if (temp->task->burst >= QUANTUM){
+      if (temp->task->burst > QUANTUM){
          run(temp->task, QUANTUM);
          temp->task->burst = temp->task->burst - QUANTUM;
+         temp = temp->next;
       } else {
          run(temp->task ,temp->task->burst);
+         aux = temp->next;
          delete((&list.head), temp->task);
+         temp = aux;
       }     
    }
 }

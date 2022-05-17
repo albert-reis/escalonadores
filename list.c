@@ -36,6 +36,8 @@ void delete(struct node **head, Task *task) {
     // special case - beginning of list
     if (strcmp(task->name,temp->task->name) == 0) {
         *head = (*head)->next;
+        
+        
     }
     else {
         // interior or last element in the list
@@ -47,7 +49,9 @@ void delete(struct node **head, Task *task) {
         }
 
         prev->next = temp->next;
+        
     }
+    free(temp);
 }
 
 // traverse the list
