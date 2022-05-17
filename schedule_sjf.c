@@ -3,7 +3,7 @@
 #include "task.h"
 #include "list.h"
 #include "CPU.h"
-Task temp;  
+
 // add a task to the list 
 void add_task(char *name, int priority, int burst){
    Task * temp = malloc(sizeof(struct task));
