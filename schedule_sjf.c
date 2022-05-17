@@ -6,12 +6,12 @@
 Task temp;  
 // add a task to the list 
 void add_task(char *name, int priority, int burst){
-
-   temp.name = name;
-   temp.priority = priority;
-   temp.burst = burst;
+   Task * temp = malloc(sizeof(struct task));
+   temp->name = name;
+   temp->priority = priority;
+   temp->burst = burst;
    
-   insert((&list.head), &temp);
+   insert((&list.head), temp);
 }
 
 // invoke the scheduler
