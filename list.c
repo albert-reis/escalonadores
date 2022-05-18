@@ -53,7 +53,7 @@ void delete(struct node **head, Task *task) {
         prev->next = temp->next;
         
     }
-    free(temp);
+    temp->task = NULL;
 }
 
 // traverse the list
