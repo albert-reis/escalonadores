@@ -19,17 +19,24 @@ void add_task(char *name, int priority, int burst){
 void schedule(){
    struct node *aux;
    struct node *temp = list.head;
+   int e = 0;
    while (1){
-      
-      if (temp->task->burst > QUANTUM){
-         run(temp->task, QUANTUM);
-         temp->task->burst = temp->task->burst - QUANTUM;
-         temp = temp->next;
-      } else {
-         run(temp->task ,temp->task->burst);
-         aux = temp->next;
-         delete((&list.head), temp->task);
-         temp = aux;
+      if (e == 1000)
+         return;
+      if (temp->task == NULL){
+         e++;
+      }
+      else{
+         if (temp->task->burst > QUANTUM){
+            run(temp->task, QUANTUM);
+            temp->task->burst = temp->task->burst - QUANTUM;
+            temp = temp->next;
+         } else {
+            run(temp->task ,temp->task->burst);
+            aux = temp->next;
+            delete((&list.head), temp->task);
+            temp = aux;
+         }
       }     
    }
 }

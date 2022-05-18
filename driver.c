@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "schedule.h"
 
@@ -27,6 +28,7 @@ int main(int argc, char *argv[])
     char *name;
     int priority;
     int burst;
+    clock_t tempo;
 
     in = fopen(argv[1],"r");
 
@@ -46,7 +48,10 @@ int main(int argc, char *argv[])
     fclose(in);
 
     // invoke the scheduler
-schedule();
+    tempo = clock();
+    schedule();
+    tempo = clock() - tempo;
+    printf("Escalonador com tempo de exe == %lf \n",((double)tempo)/((CLOCKS_PER_SEC/1000)));
 
     return 0;
 }
