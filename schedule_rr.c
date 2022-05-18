@@ -19,7 +19,7 @@ void add_task(char *name, int priority, int burst){
 void schedule(){
    struct node *aux;
    struct node *temp = list.head;
-   while ( NULL != temp->task){
+   while (1){
       
       if (temp->task->burst > QUANTUM){
          run(temp->task, QUANTUM);
