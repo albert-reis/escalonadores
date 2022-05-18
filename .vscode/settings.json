@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "schedule.h": "c"
+        "schedule.h": "c",
+        "typeinfo": "c"
     }
 }

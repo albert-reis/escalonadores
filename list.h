@@ -11,11 +11,12 @@ struct node {
     Task *task;
     struct node *next;
 };
-Task *sjf_exe_order[5];
+Task *sjf_exe_order[6];
 // insert and delete operations.
-void insert(struct node **head, Task *task);
+void insert_rr(struct node **head, Task *task);
+void insert_sjf(struct node **head, Task *task);
 void delete(struct node **head, Task *task);
-void traverse(struct node *head);
+void sjf_consult(struct node *head);
 void consult(struct node *head);
 
 #endif

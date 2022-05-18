@@ -1,7 +1,7 @@
 #ifndef CPU_H_   /* Include guard */
 #define CPU_H_
 // length of a time quantum
-#define QUANTUM 10
+#define QUANTUM 4
 #include "task.h"
 
 // run the specified task for the following time slice

@@ -10,6 +10,9 @@ void add_task(char *name, int priority, int burst);
 // invoke the scheduler
 void schedule();
 
+// call function of SJF shedule criterion
+void sjf_criterion();
+
 struct List
 {
     struct node *head;
