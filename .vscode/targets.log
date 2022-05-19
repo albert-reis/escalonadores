@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 18 22:39:22 2022
+# Make data base, printed on Wed May 18 23:16:31 2022
 
 # Variables
 
@@ -33,7 +33,7 @@ CURDIR := /home/albert/escalonadores
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{"*":"pt-br"},"_languagePackId":"74ce6549a467d1dfaba55fb5394742c9.pt-br","_translationsConfigFile":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/tcf.json","_cacheRoot":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br","_resolvedLanguagePackCoreLocation":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/albert/.vscode-server/data/clp/74ce6549a467d1dfaba55fb5394742c9.pt-br/corrupted.info","_languagePackSupport":true}
 # environment
 _ = /mnt/c/Users/Albert/AppData/Local/Programs/Microsoft VS Code/bin/code
 # makefile (from 'Makefile', line 7)
@@ -53,11 +53,11 @@ VSCODE_CWD = /mnt/c/Users/Albert/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/albert/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2020.424.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/MinGW/bin:/mnt/c/Users/Albert/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Albert/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Albert/AppData/Roaming/npm:/mnt/c/Users/Albert/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/albert/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.UbuntuonWindows_2004.2020.424.0_x64__79rhkp1fndgsc:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/nodejs/:/mnt/c/MinGW/bin:/mnt/c/Users/Albert/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Albert/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Albert/AppData/Roaming/npm:/mnt/c/Users/Albert/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-e4078d83-1fba-474e-a9ae-5323dcdc971a.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-c68041c4-dc05-499f-ab08-4a3c9b788589.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -161,9 +161,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 42625): 23 files, no impossibilities.
+# . (device 2064, inode 42625): 27 files, no impossibilities.
 
-# 23 files, no impossibilities in 1 directories.
+# 27 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -277,7 +277,6 @@ CPU.o: CPU.c CPU.h
 	$(CC) $(CFLAGS) -c CPU.c
 
 clean:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -310,6 +309,7 @@ schedule_rr.o: schedule_rr.c
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 27):
 	$(CC) $(CFLAGS) -c schedule_rr.c
 	
@@ -322,12 +322,12 @@ schedule_rr.o: schedule_rr.c
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 32 / storage = 306 B / avg = 9 B
-# current buf: size = 8162 B / used = 306 B / count = 32 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 36 / storage = 350 B / avg = 9 B
+# current buf: size = 8162 B / used = 350 B / count = 36 / avg = 9 B
 
-# strcache performance: lookups = 72 / hit rate = 55%
+# strcache performance: lookups = 76 / hit rate = 52%
 # hash-table stats:
-# Load=32/8192=0%, Rehash=0, Collisions=1/72=1%
-# Finished Make data base on Wed May 18 22:39:22 2022
+# Load=36/8192=0%, Rehash=0, Collisions=1/76=1%
+# Finished Make data base on Wed May 18 23:16:31 2022
 
  
