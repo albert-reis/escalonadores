@@ -48,10 +48,10 @@ int main(int argc, char *argv[])
     fclose(in);
 
     // invoke the scheduler
-    tempo = clock();
+   // tempo = clock();
     schedule();
-    tempo = clock() - tempo;
-    printf("Escalonador com tempo de exe == %lf \n",((double)tempo)/((CLOCKS_PER_SEC/1000)));
+    //tempo = clock() - tempo;
+    //printf("Escalonador com tempo de exe == %lf \n",((double)tempo)/((CLOCKS_PER_SEC/1000)));
 
     return 0;
 }

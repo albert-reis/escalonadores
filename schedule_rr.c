@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "schedule.h"
 #include "task.h"
 #include "list.h"
 #include "CPU.h"
-#include <stdlib.h>
 
 // add a task to the list 
 void add_task(char *name, int priority, int burst){

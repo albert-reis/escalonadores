@@ -65,7 +65,7 @@ void delete(struct node **head, Task *task) {
     temp->task = NULL;
 }
 
-// traverse the list
+// consult the list
 void sjf_consult(struct node *head) {
     Task *aux; 
     int j = 0;
